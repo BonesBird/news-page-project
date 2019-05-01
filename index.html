@@ -6,11 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link rel="stylesheet" href="./css/stle.css">
 </head>
+<style>
+    body {
+        background-color: black
+    }
+
+    body::after {
+        content: '';
+        display: block;
+        height: 50px;
+        /* Set same as footer's height */
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 99%;
+        height: 50px;
+    }
+
+    section {
+        float: right;
+        margin: 80 1.5%;
+        width: 40%;
+    }
+</style>
 
 <body>
-    <h1>toco tuesday</h1>
+
+    <header class="logo-container">
+        <div class="flex wrapper">
+
+            <center>
+                <div class="flex-container">
+                    <img src="images/nyt-logo.svg" alt="logo">
+
+            </center>
+
+    </header>
+    <section>
+        <h3>
+            <font color="white">Choose a section</font>
+        </h3>
+
+        <select>
+            <option value="Selections">Selections</option>
+            <option value="blank">blank</option>
+            <option value="bLank">bLank</option>
+            <option value="blanK">blanK</option>
+        </select>
+
+    </section>
+
+    <br>
+    <footer>
+        <div class="footer">
+            <center>
+                <font color="grey">&copy; Copyright 2019 INSTANEWS</font>
+            </center>
+        </div>
+    </footer>
+
+
     <script src="./build/js/scrpit.min.js"></script>
 </body>
 
