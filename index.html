@@ -19,7 +19,19 @@
         content: '';
         display: block;
         height: 50px;
-        /* Set same as footer's height */
+    }
+
+    /* Set same as footer's height*/
+    head::after {
+        content: '';
+        display: block;
+        height: 200px;
+    }
+
+    header::before {
+        content: '';
+        display: block;
+        height: 200px;
     }
 
     footer {
@@ -37,42 +49,40 @@
 </style>
 
 <body>
+    <div id="page-container">
+        <div id="content-wrap">
 
-    <header class="logo-container">
-        <div class="flex wrapper">
+            <head>
+            </head>
+            <header class="logo-container">
+                <div class="flex wrapper">
+                    <center>
+                        <div class="flex-container">
+                            <img src="images/nyt-logo.svg" alt="logo">
+                    </center>
+            </header>
+            <section class="form-folder">
+                <h3>
+                    <font color="white">Choose a section</font>
+                </h3>
+                <select>
+                    <option value="Selections">Selections</option>
+                    <option value="Arts">Arts</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Weather">Weather</option>
+                </select>
+            </section>
 
-            <center>
-                <div class="flex-container">
-                    <img src="images/nyt-logo.svg" alt="logo">
-
-            </center>
-
-    </header>
-    <section>
-        <h3>
-            <font color="white">Choose a section</font>
-        </h3>
-
-        <select>
-            <option value="Selections">Selections</option>
-            <option value="blank">blank</option>
-            <option value="bLank">bLank</option>
-            <option value="blanK">blanK</option>
-        </select>
-
-    </section>
-
-    <br>
-    <footer>
-        <div class="footer">
-            <center>
-                <font color="grey">&copy; Copyright 2019 INSTANEWS</font>
-            </center>
-        </div>
-    </footer>
-
-
-    <script src="./build/js/scrpit.min.js"></script>
+            <br>
+            <footer>
+                <div class="footer">
+                    <center>
+                        <font color="grey">&copy; Copyright 2019 INSTANEWS</font>
+                    </center>
+                </div>
+            </footer>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+            <script src="./build/js/scrpit.min.js"></script>
 </body>
 
 </html>
