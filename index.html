@@ -8,90 +8,64 @@
     <title>Document</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='css' type='text' media='screen' href='style.css'>
-    <link rel="stylesheet" href="./css/stle.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <style>
-    body {
-        background-color: black
-    }
-
-    body::after {
-        content: '';
-        display: block;
-        height: 50px;
-    }
-
-    /* Set same as footer's height*/
-    head::after {
-        content: '';
-        display: block;
-        height: 200px;
-    }
-
-    header::before {
-        content: '';
-        display: block;
-        height: 200px;
-    }
-
     footer {
         position: absolute;
         bottom: 0;
         width: 99%;
         height: 50px;
     }
-
-    section {
-        float: right;
-        margin: 80 1.5%;
-        width: 40%;
-    }
 </style>
 
 <body>
-    <div class='menu-container'>
-        <div class="menu">
-            <section class="form-folder">
-                <h3>
-                    <font color="white">Choose a section</font>
-                </h3>
-                <select>
-                    <option value="Selections">Selections</option>
-                    <option value="Arts">Arts</option>
-                    <option value="Sports">Sports</option>
-                    <option value="Weather">Weather</option>
-                </select>
-            </section>
-        </div>
-    </div>
-
-
-
-
     <div id="page-container">
         <div id="content-wrap">
 
             <head>
             </head>
-            <header class="logo-container">
-                <div class="flex wrapper">
-                    <center>
-                        <div class="flex-container">
-                            <img src="images/nyt-logo.svg" alt="logo">
-                    </center>
-            </header>
+
+            <header>
 
 
 
-            <footer>
-                <div class="footer">
-                    <center>
-                        <font color="grey">&copy; Copyright 2019 INSTANEWS</font>
-                    </center>
+                <div class='menu-container'>
+                    <div class="menu">
+                        
+                        <section>
+                            <img src="images/nyt-logo.svg" alt="logo image">
+                            <h3>
+                                <font color="white">Choose a section</font>
+                            </h3>
+                            <select name="Selections">
+                                <option value="Selections">Selections</option>
+                                <option value="Arts">Arts</option>
+                                <option value="Sports">Sports</option>
+                                <option value="Weather">Weather</option>
+                            </select>
+                        </section>
+                    </div>
                 </div>
-            </footer>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-            <script src="./build/js/scrpit.min.js"></script>
+            </header>
+        </div>
+
+    </div>
+
+
+    </header>
+
+
+
+    <footer>
+        <div class="footer">
+            <center>
+                <font color="grey">&copy; Copyright 2019 INSTANEWS</font>
+            </center>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="./build/js/script.min.js"></script>
 </body>
 
 </html>

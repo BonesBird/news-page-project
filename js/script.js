@@ -1,10 +1,3 @@
-import { lookup } from "dns";
-
-
-
-$('#login').click(() => {
-    $('#loginMenu').toggle()
-});
 
 
 
