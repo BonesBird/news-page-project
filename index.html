@@ -7,69 +7,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='css' type='text' media='screen' href='style.css'>
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel='stylesheet' type='css' type='text' media='screen' href='style.css'> -->
+    <link rel="stylesheet" href="./build/css/style.min.css">
 </head>
-<style>
-    footer {
-        position: absolute;
-        bottom: 0;
-        width: 99%;
-        height: 50px;
-    }
-</style>
 
 <body>
-    <div id="page-container">
-        <div id="content-wrap">
-
-            <head>
-            </head>
-
-            <header>
+    <div id="container">
+        <div class="flexbox-container"></div>
+        <div id="header">
 
 
-
-                <div class='menu-container'>
-                    <div class="menu">
-
-
-
-                        <section>
-                            <center>
-                                <img src="images/nyt-logo.svg" alt="logo image">
-                                <h3>
-                                    <font color="white">Choose a section</font>
-                                </h3>
-                                <select name="Selections">
-                                    <option value="Selections">Selections</option>
-                                    <option value="Arts">Arts</option>
-                                    <option value="Sports">Sports</option>
-                                    <option value="Weather">Weather</option>
-                                </select>
-                            </center>
-                        </section>
-
-
-                    </div>
+        </div>
+        <div id="body">
+            <section>
+                <div class="menu"></div>
+                <center><img src="images/nyt-logo.svg" alt="logo image">
+                    <h3>
+                        <font color="white">Choose a section</font>
+                        <select name="Selections">
+                            <option value="Selections">Selections</option>
+                            <option value="Arts">Arts</option>
+                            <option value="Sports">Sports</option>
+                            <option value="Weather">Weather</option>
+                    </h3>
+                    </select>
+                </center>
+            </section>
+        </div>
+        <div id="footer">
+            <footer>
+                <div class="footer">
+                    <center>
+                        <font color="grey">&copy; Copyright 2019 INSTANEWS</font>
+                    </center>
                 </div>
-            </header>
+            </footer>
         </div>
-
     </div>
-
-
-    </header>
-
-
-
-    <footer>
-        <div class="footer">
-            <center>
-                <font color="grey">&copy; Copyright 2019 INSTANEWS</font>
-            </center>
-        </div>
-    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="./build/js/script.min.js"></script>
 </body>
