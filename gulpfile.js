@@ -5,6 +5,26 @@ const browserSync = require("browser-sync");
 const eslint = require("gulp-eslint");
 const prettyError = require("gulp-prettyerror");
 
+const sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    cssnano = require('gulp-cssnano')
+
+gulp.task('sass', function () {
+    return gulp
+        .src('./sass/style.scss')
+        .pipe(sass())
+        .pipe(
+            autoprefixer({
+                browsers: ['last 2 versions'],
+            }),
+        )
+        .pipe(gulp.dest('./build/css'))
+        .pipe(cssnano())
+        .pipe(rename('style.min.css'))
+        .pipe(gulp.dest('./build/css'));
+});
+
+
 gulp.task("lint", function () {
     return gulp
         .src(["./js/*.js"])
